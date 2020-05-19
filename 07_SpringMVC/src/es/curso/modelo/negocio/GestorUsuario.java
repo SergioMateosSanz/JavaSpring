@@ -1,0 +1,21 @@
+package es.curso.modelo.negocio;
+
+import java.util.Random;
+
+import org.springframework.stereotype.Service;
+
+import es.curso.modelo.entidad.Usuario;
+
+@Service
+public class GestorUsuario {
+
+	public void validarUsuario(Usuario u) {
+		Random random = new Random();
+		int aleatorio = random.nextInt(10);
+		if (aleatorio < 5) {
+			u.setValidado(true);
+		} else {
+			u.setValidado(false);
+		}
+	}
+}

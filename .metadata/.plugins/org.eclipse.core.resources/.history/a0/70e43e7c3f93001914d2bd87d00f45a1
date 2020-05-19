@@ -1,0 +1,10 @@
+package es.curso.ejemplo0;
+
+public class Espada {
+	private String tipo;
+	
+	public void usar() {
+		
+	}
+	
+}

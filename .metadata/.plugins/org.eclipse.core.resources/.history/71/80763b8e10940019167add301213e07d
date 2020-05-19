@@ -1,0 +1,17 @@
+package es.curso.ejemplo3;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEjemplo3 {
+	
+	public static ApplicationContext context = 
+			new ClassPathXmlApplicationContext("beansColecciones.xml");
+	
+	public static void main(String[] args) {
+		List<String> listaNombres = context.getBean("listaNombres", List.class);
+		System.out.println(listaNombres);
+	}
+}

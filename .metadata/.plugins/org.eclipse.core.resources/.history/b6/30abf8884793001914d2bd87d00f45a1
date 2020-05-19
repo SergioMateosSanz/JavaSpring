@@ -1,0 +1,19 @@
+package es.curso.ejemplo0;
+
+public class FactoriaArmas {
+
+	public Arma crearArmas(String tipoArma) {
+		switch (tipoArma) {
+		case "arco":
+			return new Arco();
+			break;
+		case "espada":
+			return new Espada();
+			break;
+
+		default:
+			return null;
+		}
+	}
+
+}

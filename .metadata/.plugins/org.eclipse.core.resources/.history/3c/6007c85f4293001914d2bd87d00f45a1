@@ -1,0 +1,9 @@
+package es.curso.ejemplo0;
+
+public class Arco {
+	private String tipo;
+	
+	public void usar() {
+		
+	}
+}

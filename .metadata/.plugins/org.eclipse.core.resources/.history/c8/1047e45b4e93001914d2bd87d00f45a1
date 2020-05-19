@@ -1,0 +1,15 @@
+package es.curso.ejemplo1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEjemplo1 {
+	
+	public static ApplicationContext context = 
+			new ClassPathXmlApplicationContext("beans.xml");
+	
+	public static void main(String[] args) {
+		Persona p1 = context.getBean("personaBean");
+		
+	}
+}

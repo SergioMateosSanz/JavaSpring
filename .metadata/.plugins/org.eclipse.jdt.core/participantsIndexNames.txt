@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+/home/pue/Documents/wsSpringjpa/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2126109435.index
+/06_Web/src
+/home/pue/Documents/wsSpringjpa/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3646712049.index
+/07_SpringMVC/src
+/home/pue/Documents/wsSpringjpa/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3861086858.index
+/11_SpringMVCPeliculasUsuariosJpa/src
+/home/pue/Documents/wsSpringjpa/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4067998616.index
+/11_SpringMVCPeliculasUsuariosJpa/src

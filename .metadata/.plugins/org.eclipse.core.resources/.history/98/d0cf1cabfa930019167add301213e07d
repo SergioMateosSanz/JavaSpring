@@ -1,0 +1,33 @@
+package es.curso.ejemplo1;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEjemplo1 {
+	
+	public static ApplicationContext context = 
+			new ClassPathXmlApplicationContext("beans.xml");
+	
+	public static void main(String[] args) {
+		Persona p1 = (Persona) context.getBean("personaBean");
+		p1.setEdad(34);
+		p1.setNombre("Hommer");
+		p1.setPeso(84.4);
+		
+		Persona p2 = context.getBean("personaBean",Persona.class);
+		System.out.println(p2);
+		
+		Persona p3 = context.getBean("personaPrototype",Persona.class);
+		System.out.println(p3);
+		Persona p5 = context.getBean("personaBean2", Persona.class);
+		System.out.println(p5);
+		
+		List<Persona> listaPersonas = context.getBean("listaPrsonas", List.class);
+		listaPersonas.add(p3);
+		p3=null;//p3 apunta a null, pero el objeto no se pierde porque antes lo meti en la lista
+		p3 = context.getBean("personaPrototype", Persona.class);
+
+	}
+}

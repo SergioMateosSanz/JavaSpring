@@ -1,0 +1,13 @@
+package es.curso.ejemplo1;
+
+import org.springframework.context.ApplicationContext;
+
+public class MainEjemplo1 {
+	
+	public static ApplicationContext context;
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

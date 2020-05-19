@@ -1,0 +1,10 @@
+package es.curso.modelo.entidad;
+
+public class Usuario {
+
+	private String nombre;
+	private String password;
+	private boolean validado;
+	
+	
+}

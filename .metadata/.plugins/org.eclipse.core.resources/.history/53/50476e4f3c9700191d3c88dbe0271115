@@ -1,0 +1,24 @@
+package vista;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import cfg.Configuracion;
+import modelo.entidad.Pelicula;
+
+public class MainJpa {
+
+	public static ApplicationContext context = 
+			new AnnotationConfigApplicationContext(Configuracion.class);
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Arrancando bbdd");
+		
+		Pelicula p = context.getBean("pelicula", Pelicula.class);
+		p.setTitulo("El retorno del Jedi");
+		p.setDirector("");
+		p.setYear(1900);
+	}
+
+}

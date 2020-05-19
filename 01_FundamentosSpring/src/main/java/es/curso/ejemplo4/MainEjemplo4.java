@@ -1,0 +1,16 @@
+package es.curso.ejemplo4;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEjemplo4 {
+
+	public static ApplicationContext context = 
+			new ClassPathXmlApplicationContext("beansAutowired.xml");
+	
+	public static void main(String[] args) {
+		Persona p = context.getBean("persona", Persona.class);
+		System.out.println(p);
+	}
+
+}

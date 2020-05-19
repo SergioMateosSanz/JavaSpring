@@ -1,0 +1,30 @@
+package com.arquitecturajava.bo;
+
+import java.util.Date;
+
+public class Noticia {
+
+	private String titulo;
+	private String autor;
+	private Date fecha;
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public Date getFecha() {
+		return fecha;
+	}
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+	
+	
+}

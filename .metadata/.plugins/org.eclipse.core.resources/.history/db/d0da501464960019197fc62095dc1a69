@@ -1,0 +1,26 @@
+package presentacion;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import modelo.entidades.Pelicula;
+
+
+public class MainProyecto2 {
+
+	public static ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+	
+	public static void main(String[] args) {
+
+			Pelicula p = context.getBean("pelicula", Pelicula.class);
+			p.setTitulo("Aladin");
+			p.setGenero("fantasia");
+			p.setYear(20019);
+			p.getDirector().setId(1);
+			p.getDirector().setNombre("George Lucas");
+			p.setId(1);
+			
+			
+	}
+
+}

@@ -1,0 +1,24 @@
+package es.curso.ejemplo0;
+
+public class Espada {
+	// JavaBean son atributos privados y setter y getters publicos
+	private String tipo;
+
+	public Espada(String tipo) {
+		super();
+		this.tipo = tipo;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public void usar() {
+		System.out.println("Soy una espada de tipo " + tipo + " y hago swappp");
+	}
+
+}

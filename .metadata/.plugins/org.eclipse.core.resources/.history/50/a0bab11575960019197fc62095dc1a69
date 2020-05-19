@@ -1,0 +1,16 @@
+package cfg;
+
+import org.springframework.context.annotation.Bean;
+
+import modelo.entidades.Director;
+
+public class ConfiguracionSpring {
+
+	//Spring con esta anotacion va a invocar a este metodo para dar de alta un director.
+	//Lo dara de alta con el id del nombre del metodo y de scope por defecto singleton
+	@Bean
+	public Director director() {
+		Director d = new Director();
+		return d;
+	}
+}

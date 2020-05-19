@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="espada" class="es.curso.ejemplo2.Espada">
+		<property name="tipo" value="bastarda"></property>
+	</bean>
+	<bean d="arco" class="es.curso.ejemplo2.Arco"> 
+		<property name="tipo" value="arco corto"></property>
+	</bean>
+</beans>

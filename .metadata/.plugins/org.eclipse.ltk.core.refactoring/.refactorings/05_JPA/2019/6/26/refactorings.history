@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;08_JPAData/src/main/java&apos;&#x0A;- Original project: &apos;05_JPA&apos;&#x0A;- Destination element: &apos;08_JPAData/src/main/java&apos;&#x0A;- Original elements:&#x0A;     05_JPA/src/main/java/modelo.negocio&#x0A;     05_JPA/src/main/java/cfg&#x0A;     05_JPA/src/main/java/modelo.entidad" description="Copy packages" destination="=08_JPAData/src\/main\/java" element1="/src\/main\/java&lt;modelo.negocio" element2="/src\/main\/java&lt;cfg" element3="/src\/main\/java&lt;modelo.entidad" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1561706364632" version="1.0"/>
+</session>

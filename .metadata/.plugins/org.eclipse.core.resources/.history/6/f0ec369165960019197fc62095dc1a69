@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="director" class="modelo.entidades.Director" scope="prototype"></bean>
+	
+	<bean id="pelicula" class="modelo.entidades.Pelicula" scope="prototype" autowire="byType"></bean>
+	
+	<bean id="listaPeliculas" class="java.util.LinkedList" scope="singleton"></bean>
+	
+	<bean id="daoPelicula" class="modelo.persistencia.DaoPelicula" scope="singleton">
+		<property name="listaPeliculas" ref="listaPeliculas"></property>
+	</bean>
+	
+	<bean id="gestorPelicula" class="modelo.negocio.GestorPelicula" scope="singleton"></bean>
+
+</beans>

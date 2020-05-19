@@ -1,0 +1,16 @@
+package es.curso.ejemplo4;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEjemplo4 {
+
+	public static ApplicationContext context = 
+			new ClassPathXmlApplicationContext("beansColecciones.xml");
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

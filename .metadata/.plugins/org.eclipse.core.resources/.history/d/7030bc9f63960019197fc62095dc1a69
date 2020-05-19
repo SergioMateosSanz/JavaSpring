@@ -1,0 +1,15 @@
+package presentacion;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+public class MainProyecto2 {
+
+	public static ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+	
+	public static void main(String[] args) {
+
+	}
+
+}

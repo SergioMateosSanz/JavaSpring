@@ -1,0 +1,18 @@
+package modelo.negocio;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import modelo.entidad.Pelicula;
+import modelo.persistencia.DaoPelicula;
+
+@Service
+public class GestorPelicula {
+
+	@Autowired
+	private DaoPelicula daoPelicula; 
+	
+	public int insertar(Pelicula p) {
+		//aqui tendriamos que aplicar todas las reglas de negocio
+	}
+}

@@ -1,0 +1,7 @@
+package es.curso.ejemplo1;
+
+public class Direccion {
+	private String tipoVia;
+	private String nombreVia;
+	private String cp;
+}

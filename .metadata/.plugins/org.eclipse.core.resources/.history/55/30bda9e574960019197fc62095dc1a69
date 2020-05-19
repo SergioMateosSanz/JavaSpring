@@ -1,0 +1,11 @@
+package cfg;
+
+import modelo.entidades.Director;
+
+public class ConfiguracionSpring {
+
+	public Director director() {
+		Director d = new Director();
+		return d;
+	}
+}

@@ -1,0 +1,11 @@
+package es.curso.ejemplo0;
+
+public class Guerrero {
+	private String nombre;
+	private Espada espada;
+	
+	public void atacar() {
+		System.out.println("Soy el guerrero " + nombre);
+		espada.usar();
+	}
+}

@@ -1,0 +1,26 @@
+package cfg;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
+
+import modelo.entidades.Director;
+import modelo.entidades.Pelicula;
+
+public class ConfiguracionSpring {
+
+	//Spring con esta anotacion va a invocar a este metodo para dar de alta un director.
+	//Lo dara de alta con el id del nombre del metodo y de scope por defecto singleton
+	@Bean
+	@Scope("prototype")
+	public Director director() {
+		Director d = new Director();
+		d.setNombre("Steven");//el objeto prototypado tendra de nombre Steven
+		return d;
+	}
+	
+	public Pelicula pelicula(Director d) {
+		Pelicula p = new Pelicula();
+		p.setDirector(d);
+		return p;
+	}
+}

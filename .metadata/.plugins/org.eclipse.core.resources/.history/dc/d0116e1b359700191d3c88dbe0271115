@@ -1,0 +1,12 @@
+package modelo.negocio;
+
+import org.springframework.stereotype.Service;
+
+import modelo.persistencia.DaoPelicula;
+
+@Service
+public class GestorPelicula {
+
+	
+	private DaoPelicula daoPelicula; 
+}

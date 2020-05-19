@@ -1,0 +1,16 @@
+package modelo.negocio;
+
+import modelo.entidades.Pelicula;
+import modelo.persistencia.DaoPelicula;
+
+public class GestorPelicula {
+
+	private DaoPelicula daoPelicula;
+	
+	public boolean insertar (Pelicula p) {
+		//este metodo deberia validar la pelicula con las reglas de negocio
+		if (p.getTitulo().equals("")) {
+			return false
+		}
+	}
+}

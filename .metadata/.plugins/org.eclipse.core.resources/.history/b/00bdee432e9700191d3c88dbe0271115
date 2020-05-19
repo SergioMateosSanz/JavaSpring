@@ -1,0 +1,39 @@
+package modelo.persistencia;
+
+import java.util.List;
+
+import modelo.entidad.Pelicula;
+
+public class DaoPeliculaJpa implements DaoPelicula{
+
+	@Override
+	public int insertar(Pelicula p) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Pelicula modificar(Pelicula p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int borrar(int id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Pelicula acceder(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Pelicula> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

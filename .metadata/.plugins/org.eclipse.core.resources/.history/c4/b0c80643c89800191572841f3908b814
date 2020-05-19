@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pagina principal</title>
+</head>
+<body>
+	<h1>Bienvenidos a mi pagina web</h1>
+	<form action="mvc/vakidarUsuario" method="post">
+		Nombre: <input type="text" name="nombre"/>
+		<br/>
+		<br/>
+		Pass: <input type="text" name="password">
+		<br/>
+		<br/>
+		<input type="submit" value="Pulsa para mandar"/>
+	</form>
+</body>
+</html>

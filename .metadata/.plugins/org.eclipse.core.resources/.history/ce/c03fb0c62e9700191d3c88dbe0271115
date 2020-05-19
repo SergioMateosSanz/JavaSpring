@@ -1,0 +1,39 @@
+package modelo.persistencia;
+
+import java.util.List;
+
+import modelo.entidad.Pelicula;
+
+public class DaoPeliculaJpa implements DaoPelicula{
+
+	@Override
+	public int insertar(Pelicula p) {
+		
+		return 0;
+	}
+
+	@Override
+	public Pelicula modificar(Pelicula p) {
+		
+		return null;
+	}
+
+	@Override
+	public int borrar(int id) {
+		
+		return 0;
+	}
+
+	@Override
+	public Pelicula acceder(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Pelicula> listar() {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+package modelo.persistencia;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DaoPelicula extends JpaRepository<T, ID>{
+
+}

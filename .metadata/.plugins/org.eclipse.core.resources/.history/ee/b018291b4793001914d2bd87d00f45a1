@@ -1,0 +1,7 @@
+package es.curso.ejemplo0;
+
+public class FactoriaArmas {
+	
+	public Arma crearArmas(String tipo arma)
+	
+}

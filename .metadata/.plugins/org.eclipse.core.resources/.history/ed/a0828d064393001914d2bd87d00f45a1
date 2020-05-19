@@ -1,0 +1,5 @@
+package es.curso.ejemplo0;
+
+public abstract class Arma {
+	public void usar();
+}

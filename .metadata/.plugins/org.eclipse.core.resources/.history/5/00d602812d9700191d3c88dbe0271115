@@ -1,0 +1,14 @@
+package modelo.persistencia;
+
+import modelo.entidad.Pelicula;
+
+public interface DaoPelicula {
+	
+	/**
+	 * metodo para dar de alta una pelicula
+	 * @param p la pelicula a insertar
+	 * @return el id de la pelicula insertada
+	 */
+	public int insertar(Pelicula p);
+	
+}

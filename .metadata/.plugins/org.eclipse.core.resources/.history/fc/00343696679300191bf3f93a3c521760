@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--  los beans por defecto en Spring son de tipo singleton,
+	es decir, la instancia es unica -->
+	<bean id="personaBean" class="es.curso.ejemplo1.Persona"></bean>
+	<bean id="personaBean2" class="es.curso.ejemplo1.Persona" scope="singleton">
+		<property name="nombre" value="Margue"></property>
+		<property name="edad" value="36"></property>
+		<property name="peso" value="65.0"></property>
+	</bean>
+	
+	<!-- prototype patron de molde, cuando le pidamos este objeto nos devuelve una copia
+	pero no el del molde -->
+	<bean id="personaPrototype" class="es.curso.ejemplo1.Persona" scope="prototype"></bean>
+</beans>

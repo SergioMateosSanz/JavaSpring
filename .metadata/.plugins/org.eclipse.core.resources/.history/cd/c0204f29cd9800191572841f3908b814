@@ -1,0 +1,28 @@
+package es.curso.controlador;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import es.curso.modelo.entidad.Usuario;
+
+@Controller
+public class ControladorLogin {
+
+	@Autowired
+	private Usuario usuario;
+	
+	// url http://localhost:8080/07_SpringMVC/mvc/validarUsuario para que pase por el 
+	//FaceController
+	@RequestMapping("validarUsuario")
+	public String validar(HttpServletRequest request, @RequestParam("nombre") String nombre, 
+			@RequestParam("password") String password) {
+		System.out.println(nombre);
+		System.out.println(password);
+		System.out.println(request.getParameter("nombre"));
+		return "inicio";
+	}
+}

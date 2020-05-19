@@ -1,0 +1,14 @@
+package presentacion;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+public class MainProyecto2 {
+
+	public static ApplicationContext context = new ClassPathResource(path);
+	
+	public static void main(String[] args) {
+
+	}
+
+}

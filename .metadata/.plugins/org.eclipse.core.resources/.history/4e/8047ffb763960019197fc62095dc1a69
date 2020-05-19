@@ -1,0 +1,19 @@
+package presentacion;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import modelo.entidades.Pelicula;
+
+
+public class MainProyecto2 {
+
+	public static ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+	
+	public static void main(String[] args) {
+
+			Pelicula p = context.getBean("pelicula", Pelicula.class);
+			p.setTitulo("Aladin");
+	}
+
+}

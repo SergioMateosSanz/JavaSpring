@@ -1,0 +1,24 @@
+package modelo.persistencia;
+
+import java.util.List;
+
+import modelo.entidades.Pelicula;
+
+public class DaoPelicula {
+
+	private List<Pelicula> listaPeliculas;
+	
+	public boolean insertar(Pelicula p) {
+		return listaPeliculas.add(p);
+	}
+
+	public List<Pelicula> getListaPeliculas() {
+		return listaPeliculas;
+	}
+
+	public void setListaPeliculas(List<Pelicula> listaPeliculas) {
+		this.listaPeliculas = listaPeliculas;
+	}
+	
+	
+}

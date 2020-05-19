@@ -1,0 +1,18 @@
+package vista;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import cfg.ConfiguracionSpring;
+
+public class MainJpa {
+
+	public static ApplicationContext context = 
+			new AnnotationConfigApplicationContext(Configuracion.class);
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

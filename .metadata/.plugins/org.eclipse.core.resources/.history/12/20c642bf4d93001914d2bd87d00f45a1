@@ -1,0 +1,7 @@
+package es.curso.ejemplo1;
+
+public class MainEjemplo1 {
+	public static void main(String[] args) {
+		
+	}
+}

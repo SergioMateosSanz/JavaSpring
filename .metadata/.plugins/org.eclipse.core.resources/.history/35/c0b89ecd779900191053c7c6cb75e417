@@ -1,0 +1,10 @@
+package modelo.persistencia;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import modelo.entidad.Pelicula;
+
+//tenemos que decirle solamente la entidad que queremos persistir y el tipo de su PK
+public interface DaoPelicula extends JpaRepository<Pelicula, Integer>{
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;es.curso.controlador.ControladorLogin&apos; to &apos;ControladorUsuario&apos;&#x0A;- Original project: &apos;07_SpringMVC&apos;&#x0A;- Original element: &apos;es.curso.controlador.ControladorLogin&apos;&#x0A;- Renamed element: &apos;es.curso.controlador.ControladorUsuario&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ControladorLogin&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;es.curso.controlador{ControladorLogin.java[ControladorLogin" matchStrategy="1" name="ControladorUsuario" qualified="false" references="true" similarDeclarations="false" stamp="1561634698830" textual="false" version="1.0"/>
+</session>

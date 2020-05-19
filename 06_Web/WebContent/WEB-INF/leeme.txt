@@ -1,0 +1,2 @@
+Todo lo que haya dentro de la carpeta
+WEB-INF es inaccesibles desde fuera de mi servidor

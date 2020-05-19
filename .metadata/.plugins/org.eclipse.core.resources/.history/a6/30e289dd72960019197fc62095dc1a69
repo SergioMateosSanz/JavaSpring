@@ -1,0 +1,47 @@
+package modelo.entidades;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+//mediante anotaciones podemos decirle a Spring que de de alta objetos en el contenedor
+//tenemos 4 arquetipos de objetos en Spring
+//@Component   damos de alta un objeto en Spring sin ningun arquetipo especial
+
+//@Repository   damos de alta un objeto en Spring de tipo DAO o acceso a datos
+//@Service      damos de alta un objeto en Spring de tipo negocio
+//@Controler	damos de alta un objeto en Spring de tipo controlador (MVC)
+//Estas tres son etiquetas semanticas, es decir, que no aportan funcionalidad extra repecto a 
+// la etiqueta @Component. Es para que cuando se vea, sepamos como programadores la funcion que
+// realiza
+
+@Component("directorBean")
+@Scope("prototype")
+public class Director {
+
+	private int id;
+	@Value("Steven")
+	private String nombre;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Director [id=" + id + ", nombre=" + nombre + "]";
+	}
+
+}

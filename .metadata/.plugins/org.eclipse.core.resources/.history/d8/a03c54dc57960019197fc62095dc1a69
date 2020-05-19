@@ -1,0 +1,10 @@
+package modelo.entidades;
+
+public class Pelicula {
+
+	private int id;
+	private String titulo;
+	private Director director;
+	private String genero;
+	private int year;
+}

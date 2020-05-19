@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/pue/Documents/wsSpringjpa/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3456665532.index
+2016709594.index
+3861086858.index
+1747788020.index
+3646712049.index
+3475596503.index
+2384194642.index

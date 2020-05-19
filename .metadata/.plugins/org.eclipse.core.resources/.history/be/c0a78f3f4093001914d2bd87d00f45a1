@@ -1,0 +1,9 @@
+package es.curso.ejemplo0;
+
+public class Guerrero {
+	private Espada espada;
+	
+	public void atacar() {
+		
+	}
+}

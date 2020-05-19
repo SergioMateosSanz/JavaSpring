@@ -1,0 +1,10 @@
+package modelo.persistencia;
+
+import java.util.List;
+
+import modelo.entidades.Pelicula;
+
+public class DaoPelicula {
+
+	private List<Pelicula> listaPeliculas;
+}

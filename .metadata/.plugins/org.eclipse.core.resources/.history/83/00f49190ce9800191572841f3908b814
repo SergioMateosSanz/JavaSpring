@@ -1,0 +1,11 @@
+package es.curso.modelo.negocio;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class GestorUsuario {
+
+	public void validarUsuario(Usuario u) {
+		
+	}
+}

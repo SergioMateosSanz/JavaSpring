@@ -1,0 +1,11 @@
+package es.curso.controlador;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ControladorLogin {
+
+	public String validar() {
+		
+	}
+}

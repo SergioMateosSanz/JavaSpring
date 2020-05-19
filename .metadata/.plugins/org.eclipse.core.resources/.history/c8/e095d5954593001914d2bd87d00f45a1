@@ -1,0 +1,13 @@
+package es.curso.ejemplo0;
+
+public class MainEjemplo0 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Guerrero g = new Guerrero();
+		g.setNombre("Aquiles");
+		g.setArma(new Espada("Katana"));
+		g.atacar();
+	}
+
+}

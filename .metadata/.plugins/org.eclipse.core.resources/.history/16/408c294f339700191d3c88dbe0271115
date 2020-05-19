@@ -1,0 +1,49 @@
+package modelo.persistencia;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.stereotype.Repository;
+
+import modelo.entidad.Pelicula;
+
+@Repository
+public class DaoPeliculaJpa implements DaoPelicula{
+
+	@
+	private EntityManager em;
+	@Override
+	public int insertar(Pelicula p) {
+		
+		return 0;
+	}
+
+	@Override
+	public Pelicula modificar(Pelicula p) {
+		//sincroniza el objeto con la bbdd, si tiene id lo modifica, si no, lo inserta
+		Pelicula p2= em.merge(p);
+		//jpa solo se fia de los objetos que ha creado el, por lo que se siempre se haga un 
+		//merge hara una copia
+		return p2;
+	}
+
+	@Override
+	public int borrar(int id) {
+		em.remove(entity);
+		return 0;
+	}
+
+	@Override
+	public Pelicula acceder(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Pelicula> listar() {
+		
+		return null;
+	}
+
+}

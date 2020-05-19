@@ -1,0 +1,9 @@
+package modelo.persistencia;
+
+import modelo.entidad.Pelicula;
+
+public interface DaoPelicula {
+
+	public int insertar(Pelicula p);
+	
+}
